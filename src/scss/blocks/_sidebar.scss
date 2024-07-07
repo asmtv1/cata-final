@@ -1,0 +1,29 @@
+.sidebar {
+  &__menu {
+    padding-top: 24px;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--white);
+    flex-direction: column;
+    z-index: 100;
+
+    @include mobile-above {
+      justify-content: space-between;
+      min-height: 100%;
+      box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2),
+        -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+      transform: translateX(0);
+      width: 320px;
+    }
+    @include tablet-above {
+      width: 306px;
+      padding-top: 42px;
+      display: block;
+      min-height: auto;
+      box-shadow: none;
+    }
+  }
+}

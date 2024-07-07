@@ -1,0 +1,7 @@
+.content {
+  background-color: var(--f8f8f8);
+  @include tablet-above {
+    padding-top: 42px;
+    margin-left: 306px;
+  }
+}

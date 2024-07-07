@@ -1,0 +1,70 @@
+.about {
+  @include mobile-above {
+    display: flex;
+    gap: 48px;
+  }
+  &__text {
+    overflow: hidden;
+    display: inline-block;
+    transition: height 0.7s ease-out;
+    font-size: 14px;
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-right: 16px;
+    line-height: 18px;
+    color: var(--7e7e82);
+    height: 190px;
+    letter-spacing: 0.2px;
+    color: var(--1b1c21);
+
+    &--hidden {
+      height: 90px;
+      transition: height 0.7s ease-out;
+      overflow: hidden;
+    }
+  }
+  @include mobile-above {
+    margin: 0;
+    line-height: 20px;
+    overflow: hidden;
+    transition: height 0.7s ease-out;
+    &--hidden {
+      height: 140px;
+      transition: height 0.7s ease-out;
+      overflow: hidden;
+    }
+  }
+  &__button {
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 16px;
+    margin-top: 16px;
+    background-color: var(--f8f8f8);
+    &:hover {
+      transition-duration: 1s;
+      color: var(--red);
+    }
+    &::before {
+      display: inline-block;
+      content: '';
+      background: url(../img/errors-button.svg);
+      vertical-align: middle;
+      margin-right: 8px;
+      height: 24px;
+      width: 24px;
+    }
+    &--inverted {
+      &::before {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__image {
+    margin-top: 16px;
+    @include mobile-above {
+      min-width: 50%;
+      margin-top: 0;
+      height: 100%;
+    }
+  }
+}

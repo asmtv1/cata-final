@@ -1,0 +1,152 @@
+.price-main-menu {
+  overflow: hidden;
+  position: relative;
+  margin-top: 16px;
+  display: flex;
+  &__item {
+    position: relative;
+    background-color: var(--white);
+    height: 200px;
+    border: 1px solid var(--eaeaea);
+    border-radius: 6px;
+    width: 260px;
+    padding: 16px;
+  }
+  &__service {
+    color: var(--1b1c21);
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    &::before {
+      font-size: 14px;
+      color: var(--7e7e82);
+      content: "Ремонтные услуги";
+      display: block;
+      opacity: 0.72;
+    }
+  }
+  &__cost {
+    color: var(--1b1c21);
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    &::before {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--7e7e82);
+      content: "Цена";
+      display: block;
+      opacity: 0.72;
+    }
+  }
+  &__time {
+    color: var(--1b1c21);
+    line-height: 18px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    &::before {
+      margin-top: 16px;
+      font-size: 14px;
+      color: var(--7e7e82);
+      content: "Срок";
+      display: block;
+      opacity: 0.72;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+  }
+  &::after {
+    content: "";
+    height: 100%;
+    width: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    z-index: 1;
+    background-image: linear-gradient(
+      270deg,
+      var(--f8f8f8) 0.04%,
+      rgba(248, 248, 248, 0) 100%
+    );
+  }
+  &--margin {
+    &--left {
+      margin-left: 16px;
+    }
+  }
+  @include mobile-above {
+    height: 368px;
+    margin-top: 0;
+    margin-left: 0;
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      flex-shrink: 0;
+      align-items: center;
+      padding: 24px;
+      width: 100%;
+      & li:not(:last-child) {
+        border-bottom: 1px solid;
+        border-image: linear-gradient(
+          to left,
+          transparent 2%,
+          var(--eaeaea) 2%,
+          var(--eaeaea) 98%,
+          transparent 98%
+        );
+        border-image-slice: 1;
+      }
+    }
+    &__item {
+      border-radius: 0px;
+      border: none;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      height: 64px;
+    }
+    &__service {
+      color: var(--1b1c21);
+      line-height: 18px;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      width: 348px;
+      &::before {
+        display: none;
+      }
+    }
+    &__cost {
+      color: var(--1b1c21);
+      line-height: 18px;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      width: 81px;
+      &::before {
+        display: none;
+      }
+    }
+    &__time {
+      color: var(--1b1c21);
+      line-height: 18px;
+      font-size: 14px;
+      letter-spacing: 0.2px;
+      &::before {
+        display: none;
+      }
+    }
+    &::after {
+      display: none;
+    }
+  }
+  @include tablet-above {
+    &__list {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

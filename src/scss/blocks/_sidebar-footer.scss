@@ -1,0 +1,38 @@
+.sidebar-footer {
+  margin-top: 180px;
+  margin-left: 24px;
+
+  &__inner {
+    display: flex;
+    gap: 16px;
+  }
+  &__mail {
+    display: block;
+    font-size: 16px;
+    color: var(--1b1c21);
+    margin-top: 16px;
+  }
+  &__tel {
+    display: block;
+    margin-top: 12px;
+    font-size: 24px;
+    color: var(--1b1c21);
+    font-weight: 900;
+    letter-spacing: 0.6px;
+  }
+  &__language {
+    display: flex;
+    margin-top: 40px;
+    gap: 7px;
+  }
+  @include mobile-above {
+    z-index: 100;
+    padding-bottom: 32px;
+    margin-top: auto;
+  }
+
+  @include tablet-above {
+    min-height: 105%;
+    margin-top: 180px;
+  }
+}

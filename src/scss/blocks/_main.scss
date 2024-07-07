@@ -1,0 +1,26 @@
+.main {
+  &__title {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 3px solid transparent;
+    border-left-color: var(--41f6d7);
+    padding-left: 12px;
+    line-height: 35px;
+    margin-top: 24px;
+    font-weight: 900;
+    @include tablet-above {
+      margin-top: 0;
+      padding-left: 32px;
+    }
+  }
+
+  &__about {
+    @include mobile-above {
+      margin-top: 32px;
+      padding-inline: 24px;
+    }
+    @include tablet-above {
+      margin-top: 8px;
+    }
+  }
+}

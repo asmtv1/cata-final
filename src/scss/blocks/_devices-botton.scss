@@ -1,0 +1,19 @@
+.devices-botton {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover {
+    transition-duration: 1s;
+    opacity: 0.5;
+  }
+
+  &--hollow {
+    background-image: url(../img/dropdown.svg);
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    align-self: end;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,39 @@
+:root {
+  --7e7e82: #7e7e82;
+  --1b1c21: #1b1c21;
+  --eaeaea: #eaeaea;
+  --d9fff5: #d9fff5;
+  --b5b6bc: #b5b6bc;
+  --41f6d7: #41f6d7;
+  --dddddd: #dddddd;
+  --f8f8f8: #f8f8f8;
+  --white: #ffffff;
+  --red: #ff3e79;
+}
+
+body {
+  font-family: 'TT Lakes', sans-serif;
+  font-size: 16px;
+  background-color: var(--white);
+  @include tablet-above {
+    margin-top: -42px;
+  }
+}
+
+p:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.h1 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+input {
+  border: 1px solid var(--eaeaea);
+  border-radius: 8px;
+}
+textarea {
+  border: 1px solid var(--eaeaea);
+  border-radius: 8px;
+}

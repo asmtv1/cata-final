@@ -1,0 +1,10 @@
+.sidebar-inner {
+  padding-inline: 24px;
+  display: flex;
+  align-items: center;
+  @include mobile-above {
+    display: flex;
+    align-items: center;
+    min-width: auto;
+  }
+}

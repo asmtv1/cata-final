@@ -1,0 +1,7 @@
+.pagination-price-slider {
+  text-align: center;
+  margin-top: 16px;
+  @include mobile-above {
+    display: none;
+  }
+}

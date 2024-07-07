@@ -1,0 +1,38 @@
+.header {
+  &__inner {
+    background-color: var(--white);
+    padding: 18px 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--d9fff5);
+  }
+
+  &__logo {
+    margin-left: 16px;
+  }
+
+  &__service-menu {
+    margin-left: auto;
+    &::before {
+      content: "";
+      display: inline-block;
+      border-radius: 1px;
+      width: 2px;
+      height: 32px;
+      background: var(--eaeaea);
+      margin-right: 4px;
+    }
+    @include mobile-above {
+      margin-left: 20px;
+    }
+  }
+  @include mobile-above {
+    &__button {
+      margin-right: 20px;
+      position: relative;
+    }
+  }
+  @include tablet-above {
+    display: none;
+  }
+}

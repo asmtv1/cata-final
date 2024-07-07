@@ -1,0 +1,62 @@
+.button-menu {
+  border-radius: 50%;
+  min-width: 40px;
+  height: 40px;
+  background-color: var(--red);
+  background-repeat: no-repeat;
+  background-position: center;
+  &:hover {
+    transition-duration: 1s;
+    opacity: 0.5;
+  }
+
+  &--icon {
+    &--burger {
+      background-image: url(../img/burger-button.svg);
+      @include mobile-above {
+        &::after {
+          content: "";
+          display: block;
+          height: 32px;
+          position: absolute;
+          right: -20px;
+          top: 50%;
+          translate: -50% -50%;
+          width: 2px;
+          background: var(--eaeaea);
+        }
+      }
+    }
+    &--service {
+      background-image: url(../img/remont-button.svg);
+    }
+    &--search {
+      background-image: url(../img/search-button.svg);
+    }
+    &--phone {
+      background-image: url(../img/phone-button.svg);
+    }
+    &--message {
+      background-image: url(../img/message-button.svg);
+    }
+    &--contact {
+      background-image: url(../img/contact-button.svg);
+    }
+    &--clouse {
+      background-image: url(../img/clouse.svg);
+    }
+    &--siedebar-search {
+      background-image: url(../img/sidebar-search-button.svg);
+    }
+  }
+  &__margin {
+    margin-left: auto;
+  }
+  &--hollow {
+    background-image: url(../img/dropdown.svg);
+    background-color: var(--white);
+    border: 2px solid var(--red);
+    padding-right: 16px;
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,8 @@
+.buttons-user {
+  display: none;
+  @include mobile-above {
+    display: flex;
+    margin-left: auto;
+    gap: 16px;
+  }
+}

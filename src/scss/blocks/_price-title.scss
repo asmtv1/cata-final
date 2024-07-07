@@ -1,0 +1,30 @@
+.price-title {
+  display: none;
+  @include mobile-above {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    width: auto;
+    gap: 24px;
+    padding-top: 31px;
+    color: var(--7e7e82);
+    font-size: 14px;
+    opacity: 72.18;
+    line-height: 16px;
+
+    &--margin {
+      margin-bottom: -8px;
+      margin-left: 40px;
+    }
+
+    &--cost {
+      width: 81px;
+    }
+    &--service {
+      width: 348px;
+    }
+  }
+  @include tablet-above {
+    padding-inline: 32px;
+  }
+}

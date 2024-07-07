@@ -1,0 +1,33 @@
+.price-foter {
+  letter-spacing: 0.2px;
+  font-size: 14px;
+  line-height: 20px;
+  width: 288px;
+  &__margin {
+    margin-top: 16px;
+    margin-left: 16px;
+  }
+  &__link {
+    display: inline;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    width: 192px;
+    text-wrap: wrap;
+    color: var(--1b1c21);
+    font-weight: 700;
+    &:hover {
+      transition-duration: 1s;
+      color: var(--red);
+    }
+
+    &--img {
+      margin-left: 10px;
+      margin-top: 7px;
+    }
+  }
+  @include mobile-above {
+    width: 421px;
+    padding-inline: 24px;
+  }
+}

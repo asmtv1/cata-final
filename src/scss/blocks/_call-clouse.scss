@@ -1,0 +1,13 @@
+.call-clouse {
+  width: 40px;
+  &--position {
+    position: static;
+    margin-top: 24px;
+    margin-left: 16px;
+    @include mobile-above {
+      position: absolute;
+      top: 16px;
+      right: 473px;
+    }
+  }
+}

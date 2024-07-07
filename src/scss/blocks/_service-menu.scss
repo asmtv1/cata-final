@@ -1,0 +1,9 @@
+.service-menu {
+  @include tablet-above {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    margin-left: auto;
+  }
+}
